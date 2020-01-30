@@ -1,0 +1,11 @@
+<h1>Quick Search</h1>
+
+<% if @quick_search %>
+  <div class="card card-header results-block">
+    <strong>Symbol: </strong> <%= @quick_search.ticker %>
+    <strong>Company: </strong> <%= @quick_search.name %>
+    <strong>Price: </strong> <%= @quick_search.last_price %>
+  </div>
+<% else %>
+<p>No results to display</p>
+<% end %>
