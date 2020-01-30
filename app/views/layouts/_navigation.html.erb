@@ -31,7 +31,7 @@
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <%= form_tag search_stock_path, method: :get do %>
+      <%= form_tag search_stock_path, remote: true, method: :get do %>
         <div class="form-inline my-2 my-lg-0">
           <%= text_field_tag :stock, params[:stock], placeholder: "Quick Search", autofocus: true, class: "form-control mr-sm-2" %>
           <%= button_tag type: :submit, class: "btn btn-outline-success my-2 my-sm-0" do %>
