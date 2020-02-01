@@ -1,7 +1,7 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .search-area {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .no-right-padding {
@@ -14,4 +14,13 @@
 
 .results-block {
   display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.logout-btn {
+  margin-right: 5px;
+}
+
+.main-navbar {
+  margin-bottom: 15px;
 }
