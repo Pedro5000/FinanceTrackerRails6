@@ -7,4 +7,9 @@ Rails.application.routes.draw do
   get 'my-portfolio', to: 'users#my_portfolio'
   get 'search-stock', to: 'stocks#search'
   get 'quick-search-stock', to: 'stocks#quick_search'
+  get 'friends', to: 'users#friends'
+  get 'search-friend', to: 'users#search'
+  resources :friendships, only: [:create, :destroy]
+  resources :users, only: [:show]
+
 end
